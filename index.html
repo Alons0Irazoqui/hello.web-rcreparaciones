@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <title>RC Refrigeración | Especialistas en Cuartos Fríos y Equipos Comerciales — Culiacán</title>
+  <meta name="description" content="Reparación, mantenimiento e instalación de cuartos fríos, vitrinas refrigeradas, estufas industriales, freidoras y más en Culiacán, Sinaloa. Servicio rápido y confiable. Llama: 667 413 4813." />
+  <meta name="keywords" content="reparación cuartos fríos Culiacán, mantenimiento refrigeración comercial, instalación equipos restaurante Culiacán, vitrinas refrigeradas, estufas industriales Sinaloa, RC Refrigeración, freidoras, congeladores industriales" />
+  <meta property="og:title" content="RC Refrigeración | Especialistas en Cuartos Fríos y Equipos Comerciales" />
+  <meta property="og:description" content="Reparación, mantenimiento e instalación profesional. Servicio rápido y confiable para negocios, comercios e industrias en Culiacán." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_MX" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Barlow+Condensed:wght@700;800;900&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PRELOADER PREMIUM                                          -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div id="preloader" class="preloader">
+  <div class="preloader-bg"></div>
+  <div class="preloader-particles" id="preloaderParticles"></div>
+  <div class="preloader-content">
+    <div class="preloader-logo-wrap">
+      <div class="preloader-rings">
+        <div class="p-ring p-ring-1"></div>
+        <div class="p-ring p-ring-2"></div>
+        <div class="p-ring p-ring-3"></div>
+      </div>
+      <div class="preloader-logo-circle">
+        <img src="imagenes/logo.png" alt="RC Refrigeración" class="preloader-logo-img" />
+      </div>
+    </div>
+    <div class="preloader-brand-name">
+      <span class="p-name" id="pName">RC</span>
+      <span class="p-mg" id="pMg">REFRIGERACIÓN</span>
+    </div>
+    <p class="preloader-tagline-text">Especialistas en Refrigeración Comercial &amp; Industrial</p>
+    <div class="preloader-progress-wrap">
+      <div class="preloader-progress-bar" id="progressBar"></div>
+    </div>
+    <div class="preloader-percent" id="progressPercent">0%</div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  HEADER / NAVBAR                                            -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<header id="navbar" class="navbar">
+  <div class="navbar-inner">
+    <a href="#inicio" class="nav-logo" aria-label="RC Refrigeración">
+      <img src="imagenes/logo.png" alt="RC Refrigeración" class="nav-logo-img" />
+    </a>
+    <nav class="nav-links" aria-label="Menú principal">
+      <a href="#inicio"     class="nav-link">Inicio</a>
+      <a href="#servicios"  class="nav-link">Servicios</a>
+      <a href="#beneficios" class="nav-link">Beneficios</a>
+      <a href="#proceso"    class="nav-link">Proceso</a>
+      <a href="#contacto"   class="nav-link">Contacto</a>
+    </nav>
+    <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20de%20refrigeración"
+       class="nav-cta" target="_blank" rel="noopener">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+      Llamar Ahora
+    </a>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav class="mobile-nav">
+      <a href="#inicio"     class="mobile-link">Inicio</a>
+      <a href="#servicios"  class="mobile-link">Servicios</a>
+      <a href="#beneficios" class="mobile-link">Beneficios</a>
+      <a href="#proceso"    class="mobile-link">Proceso</a>
+      <a href="#contacto"   class="mobile-link">Contacto</a>
+    </nav>
+    <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20de%20refrigeración"
+       class="mobile-cta" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  HERO                                                       -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="inicio" class="hero">
+
+  <div class="hero-bg">
+    <div class="hero-bg-photo">
+      <img
+        src="imagenes/fondo.png"
+        alt=""
+        aria-hidden="true"
+        loading="eager"
+      />
+    </div>
+    <div class="hero-gradient-overlay"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+    <div class="hero-speed-lines"></div>
+  </div>
+
+<canvas id="heroCanvas" class="hero-canvas"></canvas>
+
+  <div class="hero-container">
+
+    <div class="hero-copy" id="heroCopy">
+
+      <div class="hero-badge" id="heroBadge">
+        <span class="badge-live"></span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="#7dd3fc"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+        Servicio Profesional — <strong>Rápido y Confiable</strong>
+      </div>
+
+      <h1 class="hero-title" id="heroTitle">
+        <span class="ht-top">¿Falla tu equipo de</span>
+        <span class="ht-main">Refrigeración<br/>Comercial?</span>
+        <span class="ht-accent">Lo Solucionamos Hoy ❄️</span>
+      </h1>
+
+      <p class="hero-subtitle" id="heroSubtitle">
+        Reparación, mantenimiento e instalación de cuartos fríos, equipos para restaurantes
+        y refrigeración industrial en Culiacán y toda la región.
+      </p>
+
+      <div class="hero-ctas" id="heroCtas">
+        <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20de%20refrigeración%20comercial"
+           class="btn-primary-hero" target="_blank" rel="noopener">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          Solicitar Servicio Ahora
+        </a>
+        <a href="tel:6674134813" class="btn-secondary-hero">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          667 413 4813
+        </a>
+      </div>
+
+      <div class="hero-trust" id="heroTrust">
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Diagnóstico profesional
+        </div>
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Garantía en el servicio
+        </div>
+        <div class="trust-pill">
+          <svg width="13" height="13" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg>
+          Servicio a domicilio
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual" id="heroVisual">
+
+      <div class="hero-img-frame" id="heroMainCard">
+        <div class="hero-img-inner">
+          <img
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=85"
+            alt="Técnico especialista en refrigeración comercial"
+            loading="eager"
+            onerror="this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=85'"
+          />
+          <div class="hero-img-overlay"></div>
+        </div>
+        <div class="hero-img-badge">
+          <div class="hib-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#4ade80"><circle cx="12" cy="12" r="10"/><polyline points="9 12 11 14 15 10" stroke="white" stroke-width="2" fill="none"/></svg>
+          </div>
+          <div>
+            <div class="hib-title">Técnico especializado</div>
+            <div class="hib-sub">● Disponible ahora mismo</div>
+          </div>
+        </div>
+        <div class="img-bubble ib1"></div>
+        <div class="img-bubble ib2"></div>
+        <div class="img-bubble ib3"></div>
+      </div>
+
+      <!-- Tarjeta flotante: cotización -->
+      <div class="float-card fc-price" id="fcPrice">
+        <div class="fc-icon fc-icon-blue">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="2"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <div class="fc-body">
+          <span class="fc-label">Cotiza sin costo</span>
+          <span class="fc-value" style="color: var(--royal);">Gratis <small>siempre</small></span>
+          <span class="fc-note">Atención inmediata</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta flotante: velocidad -->
+      <div class="float-card fc-speed" id="fcSpeed">
+        <div class="fc-icon fc-icon-cyan">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <div class="fc-body">
+          <span class="fc-label">Respuesta rápida</span>
+          <span class="fc-value-big">Hoy mismo</span>
+          <span class="fc-note">a tu negocio</span>
+        </div>
+      </div>
+
+      <!-- Tarjeta flotante: rating -->
+      <div class="float-card fc-rating" id="fcRating">
+        <div class="fc-stars">★★★★★</div>
+        <div class="fc-rating-text">+300 clientes satisfechos</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-scroll-cue" id="heroScrollCue">
+    <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+    <span>Desliza</span>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  EQUIPOS BAR                                                -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<div class="brands-bar reveal-up">
+  <div class="brands-inner">
+    <span class="brands-label">Especialistas en:</span>
+    <div class="brands-chips">
+      <span class="brand-chip chip-blue">❄ Cuartos Fríos</span>
+      <span class="brand-sep">·</span>
+      <span class="brand-chip chip-cyan">🔧 Vitrinas Refrigeradas</span>
+      <span class="brand-sep">·</span>
+      <span class="brand-chip chip-green">✔ Estufas Industriales</span>
+      <span class="brand-chip chip-green">✔ Freidoras</span>
+      <span class="brand-chip chip-green">✔ Congeladores</span>
+      <span class="brand-chip chip-green">✔ Refrigeradores</span>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  SERVICIOS                                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="servicios" class="section-dark">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Nuestros Servicios</div>
+      <h2 class="sec-title">Todo lo que tu Negocio<br/><em class="em-electric">Necesita en un Solo Lugar</em></h2>
+      <p class="sec-subtitle">Reparación, mantenimiento e instalación con personal capacitado, herramienta profesional y respuesta rápida.</p>
+    </div>
+    <div class="services-grid">
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="imagenes/images (2).jpg"
+               alt="Cuartos fríos comerciales"
+               loading="lazy" />
+          <div class="sc-img-overlay"></div>
+          <span class="sc-img-tag">Más solicitado</span>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap ic-blue">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="1.8"><rect x="2" y="3" width="20" height="18" rx="2"/><path d="M12 7v10M8 10l4-3 4 3M8 14l4 3 4-3"/></svg>
+          </div>
+          <h3>Cuartos Fríos</h3>
+          <p>Instalación, reparación y mantenimiento de cuartos fríos para negocios, comercios e industrias. Cuidamos la temperatura de tu inversión.</p>
+          <ul class="sc-list">
+            <li>Reparación de unidades condensadoras</li>
+            <li>Cambio de compresores y evaporadores</li>
+            <li>Fugas de refrigerante</li>
+            <li>Instalación completa desde cero</li>
+          </ul>
+          <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20para%20cuarto%20frío" class="sc-cta" target="_blank" rel="noopener">Solicitar servicio →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?auto=format&fit=crop&w=600&q=80"
+               alt="Equipos para restaurantes"
+               loading="lazy"
+               onerror="this.parentElement.style.background='linear-gradient(135deg,#fffbeb,#fef3c7)'" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap ic-yellow">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="1.8"><path d="M3 2h18v2H3z"/><path d="M5 4v16h14V4"/><path d="M9 8h6M9 12h6M9 16h4"/></svg>
+          </div>
+          <h3>Equipos para Restaurantes</h3>
+          <p>Especialistas en servicio técnico para equipos comerciales de cocina y exhibición. Tu negocio no puede detenerse.</p>
+          <ul class="sc-list">
+            <li>Vitrinas refrigeradas y barras frías</li>
+            <li>Estufas industriales</li>
+            <li>Freidoras y congeladores industriales</li>
+            <li>Conservadores de alimentos</li>
+          </ul>
+          <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20para%20equipos%20de%20restaurante" class="sc-cta" target="_blank" rel="noopener">Solicitar servicio →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1584568694244-14fbdf83bd30?auto=format&fit=crop&w=600&q=80"
+               alt="Reparación de refrigeradores domésticos e industriales"
+               loading="lazy"
+               onerror="this.parentElement.style.background='linear-gradient(135deg,#f0fdf4,#dcfce7)'" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap ic-green">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="1.8"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="4" y1="10" x2="20" y2="10"/><circle cx="8" cy="6" r="1"/><circle cx="8" cy="16" r="1"/></svg>
+          </div>
+          <h3>Refrigeradores</h3>
+          <p>Reparamos refrigeradores domésticos e industriales de todas las marcas. Diagnóstico profesional y solución rápida.</p>
+          <ul class="sc-list">
+            <li>No enfría o no congela</li>
+            <li>Pierde gas / fugas de refrigerante</li>
+            <li>Ruidos o vibraciones extrañas</li>
+            <li>Soluciones para hogar y negocios</li>
+          </ul>
+          <a href="https://wa.me/526674134813?text=Hola,%20necesito%20reparación%20de%20refrigerador" class="sc-cta" target="_blank" rel="noopener">Solicitar servicio →</a>
+        </div>
+      </article>
+
+      <article class="service-card stagger-card">
+        <div class="sc-img-wrap">
+          <img src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=600&q=80"
+               alt="Mantenimiento preventivo y correctivo de refrigeración"
+               loading="lazy"
+               onerror="this.parentElement.style.background='linear-gradient(135deg,#faf5ff,#ede9fe)'" />
+          <div class="sc-img-overlay"></div>
+        </div>
+        <div class="sc-body">
+          <div class="sc-icon-wrap ic-purple">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="1.8"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+          </div>
+          <h3>Mantenimiento Preventivo y Correctivo</h3>
+          <p>Programa de mantenimiento periódico para alargar la vida útil de tus equipos y evitar fallas costosas.</p>
+          <ul class="sc-list">
+            <li>Limpieza de condensadores y filtros</li>
+            <li>Revisión de presiones y temperatura</li>
+            <li>Calibración de controles y termostatos</li>
+            <li>Contratos de mantenimiento empresarial</li>
+          </ul>
+          <a href="https://wa.me/526674134813?text=Hola,%20me%20interesa%20el%20mantenimiento%20preventivo" class="sc-cta" target="_blank" rel="noopener">Solicitar servicio →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  BENEFICIOS                                                 -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="beneficios" class="section-benefits">
+  <div class="benefits-glow-left"></div>
+  <div class="benefits-glow-right"></div>
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Por Qué Elegirnos</div>
+      <h2 class="sec-title">La <em class="em-electric">Diferencia</em> que<br/>Siente tu Negocio</h2>
+      <p class="sec-subtitle">No somos un servicio genérico. Somos especialistas en refrigeración que entienden que cada hora sin equipo es dinero perdido.</p>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-blue">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h4>Respuesta Rápida</h4>
+        <p>Atendemos tu llamada con urgencia real. Entendemos que un equipo caído es una emergencia para tu negocio.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-blue">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h4>Garantía en el Servicio</h4>
+        <p>Todos nuestros trabajos incluyen garantía. Respaldamos cada reparación con responsabilidad y profesionalismo.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-green">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h4>Personal Capacitado</h4>
+        <p>Técnicos especializados en refrigeración comercial e industrial con años de experiencia comprobada en campo.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-cyan">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0ea5e9" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h4>Servicio a Domicilio</h4>
+        <p>Vamos a tu negocio, restaurante o empresa. Sin necesidad de mover equipos pesados. Trabajamos en tu espacio.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-yellow">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        </div>
+        <h4>Cotización sin Compromiso</h4>
+        <p>Diagnóstico y cotización gratuita. Decides si proceder o no. Sin presión, con transparencia y honestidad.</p>
+      </div>
+
+      <div class="benefit-card stagger-card">
+        <div class="benefit-icon-wrap bi-purple">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h4>Culiacán y Región</h4>
+        <p>Atendemos toda Culiacán y la región de Sinaloa. Estamos cerca de donde tu negocio nos necesita.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PROMO — COTIZACIÓN GRATIS                                  -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-promo reveal-up">
+  <div class="sec-container">
+    <div class="promo-inner">
+      <div class="promo-left">
+        <div class="promo-eyebrow">❄️ Para Negocios y Comercios</div>
+        <h2 class="promo-title">Cotiza tu Servicio<br/><span class="promo-price-text">Sin Costo ni Compromiso</span></h2>
+        <p class="promo-body">Cuéntanos qué equipo necesitas reparar o instalar y te enviamos una <strong>cotización honesta y transparente.</strong><br/>Tu negocio merece un servicio de confianza.</p>
+        <div class="promo-checks">
+          <span class="pc-item"><svg width="14" height="14" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg> Atención inmediata</span>
+          <span class="pc-item"><svg width="14" height="14" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg> Diagnóstico profesional</span>
+          <span class="pc-item"><svg width="14" height="14" viewBox="0 0 24 24" stroke="#4ade80" stroke-width="2.5" fill="none"><polyline points="20 6 9 17 4 12"/></svg> Precios justos y claros</span>
+        </div>
+      </div>
+      <div class="promo-right">
+        <div class="promo-card">
+          <div class="promo-card-header">Solicitá tu cotización</div>
+          <div class="promo-card-icon">❄️</div>
+          <div class="promo-card-tagline">Cotización</div>
+          <div class="promo-card-pill">🎉 Completamente GRATIS</div>
+          <a href="https://wa.me/526674134813?text=Hola,%20quiero%20cotizar%20un%20servicio%20de%20refrigeración"
+             class="btn-primary-hero promo-btn" target="_blank" rel="noopener">Cotizar Ahora por WhatsApp</a>
+          <div class="promo-card-eta">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Respondemos de inmediato
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  PROCESO                                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="proceso" class="section-dark">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Cómo Funciona</div>
+      <h2 class="sec-title">Tu Equipo Funcionando<br/><em class="em-electric">en 5 Pasos Simples</em></h2>
+      <p class="sec-subtitle">Proceso claro, rápido y sin complicaciones. Así trabajamos en RC Refrigeración.</p>
+    </div>
+    <div class="process-wrap">
+      <div class="process-step stagger-card">
+        <div class="ps-number">01</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <h4>Contacto</h4>
+          <p>Llámanos o escríbenos por WhatsApp describiendo el problema con tu equipo de refrigeración.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">02</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <h4>Respuesta Rápida</h4>
+          <p>Un técnico especializado te contacta de inmediato y coordina la visita a tu negocio o domicilio.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">03</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+          <h4>Diagnóstico en Sitio</h4>
+          <p>Revisión completa del equipo en tu local. Te explicamos exactamente qué falla y el costo del servicio.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">04</div>
+        <div class="ps-connector"></div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+          <h4>Reparación Profesional</h4>
+          <p>Con tu aprobación, realizamos el trabajo con refacciones de calidad y herramienta especializada.</p>
+        </div>
+      </div>
+      <div class="process-step stagger-card">
+        <div class="ps-number">05</div>
+        <div class="ps-content">
+          <div class="ps-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg></div>
+          <h4>Garantía y Seguimiento</h4>
+          <p>Equipo funcionando con garantía incluida. Seguimos disponibles si tienes cualquier pregunta.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  LOGÍSTICA / COBERTURA                                      -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-logistics">
+  <div class="sec-container">
+    <div class="logistics-wrap reveal-up">
+      <div class="logistics-left">
+        <div class="sec-badge">Cobertura y Horarios</div>
+        <h2 class="sec-title" style="text-align:left;">Servicio en <em class="em-electric">Culiacán</em> y<br/>Toda la Región</h2>
+        <p class="logistics-desc">Atendemos con rapidez y profesionalismo a negocios, comercios e industrias en Culiacán y municipios cercanos de Sinaloa.</p>
+        <div class="zones-grid">
+          <div class="zone-pill"><span class="z-dot"></span>Culiacán</div>
+          <div class="zone-pill"><span class="z-dot"></span>Navolato</div>
+          <div class="zone-pill"><span class="z-dot"></span>Costa Rica</div>
+          <div class="zone-pill"><span class="z-dot"></span>Eldorado</div>
+          <div class="zone-pill"><span class="z-dot"></span>Quilá</div>
+          <div class="zone-pill"><span class="z-dot"></span>Imala</div>
+          <div class="zone-pill"><span class="z-dot"></span>Aguaruto</div>
+          <div class="zone-pill"><span class="z-dot"></span>Y zonas aledañas</div>
+        </div>
+      </div>
+      <div class="logistics-right">
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+          <div><h5>Horarios de Atención</h5><p>Lun–Sáb: 8:00 am – 7:00 pm<br/>Urgencias: consultar disponibilidad</p></div>
+        </div>
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div><h5>Tiempo de Respuesta</h5><p>Atendemos tu llamada con urgencia. Tu negocio no puede esperar por un equipo caído.</p></div>
+        </div>
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <div><h5>Garantía del Servicio</h5><p>Garantía en refacciones y mano de obra. Respaldamos nuestro trabajo con seriedad.</p></div>
+        </div>
+        <div class="logistics-card">
+          <div class="lc-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#7c3aed" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></div>
+          <div><h5>Formas de Pago</h5><p>Efectivo y transferencia electrónica. Pagas al finalizar el servicio con tu satisfacción garantizada.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  AUTHORITY / ESTADÍSTICAS                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section class="section-authority">
+  <div class="authority-bg-photo">
+    <img
+      src="https://images.unsplash.com/photo-1581093450021-4a7360e9a6b5?auto=format&fit=crop&w=1920&q=80"
+      alt=""
+      aria-hidden="true"
+      loading="lazy"
+      onerror="this.src='https://images.unsplash.com/photo-1600565193348-f74bd3960d62?auto=format&fit=crop&w=1920&q=80'"
+    />
+  </div>
+  <div class="authority-bg-glow"></div>
+  <div class="sec-container">
+    <div class="authority-inner reveal-up">
+      <div class="authority-lightning">❄️</div>
+      <h2 class="authority-title">Experiencia que<br/><span class="em-yellow">Mantiene tu Negocio Frío</span></h2>
+      <p class="authority-desc">En RC Refrigeración llevamos años manteniendo la cadena de frío de negocios y comercios en Culiacán. Somos el aliado de confianza de restaurantes, supermercados y empresas sinaloenses.</p>
+      <div class="stats-row">
+        <div class="stat-box"><span class="stat-num" data-target="300" data-prefix="+" data-suffix="">+300</span><span class="stat-lbl">Clientes satisfechos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-box"><span class="stat-num" data-target="10" data-suffix="+ años">10+ años</span><span class="stat-lbl">De experiencia</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-box"><span class="stat-num" data-target="98" data-suffix="%">98%</span><span class="stat-lbl">Servicios exitosos</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat-box"><span class="stat-num" data-target="100" data-suffix="%">100%</span><span class="stat-lbl">Servicio a domicilio</span></div>
+      </div>
+      <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20de%20refrigeración%20urgente"
+         class="btn-primary-hero authority-btn" target="_blank" rel="noopener">
+        Contactar Ahora — Es Gratis
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  CONTACTO                                                   -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<section id="contacto" class="section-contact">
+  <div class="sec-container">
+    <div class="sec-header reveal-up">
+      <div class="sec-badge">Contáctanos</div>
+      <h2 class="sec-title">¿Listo para Resolver<br/><em class="em-electric">el Problema Hoy?</em></h2>
+      <p class="sec-subtitle">Escríbenos o llámanos y un técnico especializado atenderá tu negocio.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal-up">
+        <div class="contact-wa-card">
+          <div class="cwa-icon">
+            <svg width="44" height="44" viewBox="0 0 24 24" fill="#16a34a"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.5c-1.94 0-3.757-.52-5.317-1.427l-.381-.226-3.96 1.039 1.057-3.855-.247-.397A9.448 9.448 0 0 1 2.5 12c0-5.238 4.262-9.5 9.5-9.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5z"/></svg>
+          </div>
+          <div class="cwa-text">
+            <span class="cwa-label">WhatsApp Directo</span>
+            <a href="https://wa.me/526674134813" class="cwa-number" target="_blank" rel="noopener">667 413 4813</a>
+          </div>
+        </div>
+        <div class="contact-details">
+          <div class="cd-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#1560bd" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.9 1.27h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>667 413 4813</span></div>
+          <div class="cd-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Av. Aztlán #2592, Col. Ind. El Palmito, Culiacán, Sin.</span></div>
+          <div class="cd-item"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Lun–Sáb: 8am–7pm</span></div>
+        </div>
+        <a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20de%20refrigeración"
+           class="btn-primary-hero contact-wa-btn" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg>
+          Enviar Mensaje por WhatsApp
+        </a>
+      </div>
+      <div class="contact-form-wrap reveal-up">
+        <form class="contact-form" id="contactForm">
+          <h3 class="form-title">Solicita tu Servicio</h3>
+          <div class="form-row-2">
+            <div class="form-group"><label for="f-nombre">Nombre completo *</label><input type="text" id="f-nombre" name="nombre" placeholder="Tu nombre" required /></div>
+            <div class="form-group"><label for="f-tel">Teléfono / WhatsApp *</label><input type="tel" id="f-tel" name="telefono" placeholder="667 XXX XXXX" required /></div>
+          </div>
+          <div class="form-group">
+            <label for="f-equipo">Tipo de equipo *</label>
+            <select id="f-equipo" name="equipo" required>
+              <option value="">Selecciona el equipo</option>
+              <option value="cuarto">Cuarto frío</option>
+              <option value="vitrina">Vitrina refrigerada</option>
+              <option value="restaurante">Equipo de restaurante</option>
+              <option value="refrigerador">Refrigerador (doméstico/industrial)</option>
+              <option value="congelador">Congelador industrial</option>
+              <option value="mantenimiento">Mantenimiento preventivo</option>
+              <option value="otro">Otro equipo</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="f-colonia">Negocio / Ubicación *</label><input type="text" id="f-colonia" name="colonia" placeholder="Nombre del negocio y colonia" required /></div>
+          <div class="form-group"><label for="f-msg">Describe el problema</label><textarea id="f-msg" name="mensaje" rows="3" placeholder="¿Qué falla tiene tu equipo?"></textarea></div>
+          <button type="submit" class="btn-primary-hero form-btn">Solicitar Servicio — Es Gratis</button>
+          <p class="form-privacy">Tu información es confidencial y solo se usa para contactarte.</p>
+        </form>
+      </div>
+    </div>
+    <div class="map-wrap reveal-up">
+      <div class="map-header">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>Av. Aztlán #2592, Col. Ind. El Palmito, Culiacán, Sinaloa</span>
+      </div>
+      <iframe title="RC Refrigeración — Culiacán, Sinaloa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57820.0!2d-107.394!3d24.8091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x869f5324e61e4b35%3A0x4db19d7d4d8a9a4a!2sCuliac%C3%A1n%2C%20Sinaloa!5e0!3m2!1ses!2smx!4v1700000000000"
+        width="100%" height="340" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════════════ -->
+<!--  FOOTER                                                    -->
+<!-- ═══════════════════════════════════════════════════════════ -->
+<footer class="site-footer">
+  <div class="footer-top-line"></div>
+  <div class="sec-container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <img src="imagenes/logo.png" alt="RC Refrigeración" class="footer-logo-img" />
+        </div>
+        <p class="footer-desc">Especialistas en reparación, mantenimiento e instalación de cuartos fríos y equipos comerciales en Culiacán, Sinaloa. Servicio rápido, confiable y profesional.</p>
+        <div class="footer-brands-pill"><span>❄ Cuartos Fríos</span><span class="fp-sep">·</span><span>🔧 Equipos Comerciales</span></div>
+      </div>
+      <div class="footer-col">
+        <h5>Servicios</h5>
+        <ul>
+          <li><a href="#servicios">Cuartos Fríos</a></li>
+          <li><a href="#servicios">Equipos para Restaurantes</a></li>
+          <li><a href="#servicios">Refrigeradores</a></li>
+          <li><a href="#servicios">Mantenimiento Preventivo</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Navegación</h5>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contacto</h5>
+        <div class="footer-contact-items">
+          <div class="fci"><svg width="14" height="14" viewBox="0 0 24 24" fill="#16a34a"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0z"/></svg><a href="https://wa.me/526674134813" target="_blank" rel="noopener">667 413 4813</a></div>
+          <div class="fci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4a9fff" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Av. Aztlán #2592, Col. Ind. El Palmito, Culiacán, Sin.</span></div>
+          <div class="fci"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><span>Lun–Sáb: 8am–7pm</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 RC Refrigeración — Todos los derechos reservados.</p>
+      <p class="footer-tagline">❄️ Servicio Rápido y Confiable</p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/526674134813?text=Hola,%20necesito%20servicio%20de%20refrigeración"
+   class="wa-float" id="waFloat" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+  <div class="wa-pulse-ring"></div>
+  <div class="wa-pulse-ring wa-pulse-ring-2"></div>
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.089.534 4.052 1.472 5.761L.057 23.882l6.304-1.654C8.01 23.041 9.965 23.5 12 23.5c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.5c-1.94 0-3.757-.52-5.317-1.427l-.381-.226-3.96 1.039 1.057-3.855-.247-.397A9.448 9.448 0 0 1 2.5 12c0-5.238 4.262-9.5 9.5-9.5s9.5 4.262 9.5 9.5-4.262 9.5-9.5 9.5z"/></svg>
+  <span class="wa-tooltip">¡Cotiza gratis!</span>
+</a>
+
+<script src="main.js"></script>
+</body>
+</html>
